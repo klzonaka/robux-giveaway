@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ヘッダーデータ -->
+<head>
+    <title>Giveaway</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- ページ本文 -->
+<body>
+    <!-- ページのヘッダー部分 -->
+    <header>
+        <div class="bg">
+            <h1>
+                Giveaway
+            </h1>
+        </div>
+    </header>
+
+    <!-- 主機能 -->
+    <div class="main">
+        <div class="content">
+            <h1>
+                メンバー
+            </h1>
+            <p>
+                抽選を行うメンバーの名前を入力します。
+            </p>
+            <textarea placeholder="メンバーが複数人いる場合は改行します。" id="member"></textarea>
+        </div>
+        <div class="content">
+            <h1>
+                報酬
+            </h1>
+            <p>
+                ロバックスを入力します。
+            </p>
+            <textarea placeholder="半角数字のみ可能・報酬が複数ある場合は改行します。 抽選は上から順番に行われます。" id="reward"></textarea>
+        </div>
+        <div class="content">
+            <h1>
+                Giveaway
+            </h1>
+            <p>
+                この入力内容で抽選を開始します。
+            </p>
+            <button onclick="giveaway()">Giveaway!</button>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+
+</html>

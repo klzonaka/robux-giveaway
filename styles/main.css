@@ -1,0 +1,91 @@
+/* 変数 */
+:root {
+    /* ページの背景設定 */
+    --background-color: #111;
+
+    /* テキストの設定 */
+    --text-color-light: #eee;
+    --text-color-dark : #111;
+
+    /* ボタンの設定 */
+    --button-color: #335fff;
+
+    /* 使用するフォント */
+    --font-family : sans-serif
+}
+
+/* ページ全体の設定 */
+body {
+    margin          : 0;
+    background-color: var(--background-color);
+    color           : var(--text-color-light);
+    overflow-x      : hidden;
+    font-family     : var(--font-family);
+}
+
+/* ヘッダ設定 */
+header {
+    margin: 2vw;
+}
+
+header .bg {
+    border-radius   : 16px;
+    background-image: url(./img/bg.jpg);
+}
+
+header .bg h1 {
+    text-align   : center;
+
+    padding      : 2rem 4rem;
+    background   : rgba(0, 0, 0, 0.5); 
+    border-radius: 16px;
+}
+
+/* 主機能設定 */
+.main {
+    margin     : 2vw;
+    /* flexコンテナによるレスポンシブデザイン */
+    display    : flex;
+    align-items: stretch;
+    gap        : 2vw;
+    flex-wrap  : wrap;
+}
+
+.main .content {
+    flex         : 1 1 200px;
+    padding      : 2rem 2rem;
+    background   : rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+}
+
+.main .content textarea {
+    resize       : none;
+    height       : 42vh;
+    width        : 100%;
+    border       : none;
+    border-radius: 8px;
+    background   : var(--text-color-dark);
+    color        : var(--text-color-light);
+    line-height: 1.5;
+}
+
+.main .content textarea::placeholder {
+    padding: 12px;
+    color: #888;
+}
+
+button {
+    padding      : 2rem 4rem;
+    color        : var(--text-color-light);
+    background   : var(--button-color); 
+    font-size    : 24px;
+    border       : 2px solid rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    width        : 100%;
+    font-family  : var(--font-family);
+    font-weight  : bold;
+}
+
+button:hover {
+    border: 2px solid var(--text-color-light);
+}
