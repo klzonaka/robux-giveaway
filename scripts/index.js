@@ -31,7 +31,8 @@ async function giveaway() {
         const title    = createCenteredTitle("");
         const subtitle = createCenteredSubtitle(`${reward} Robux ` + "(" + (chance * 100).toFixed(2).toString() + "%)");
 
-        const visualMembers = [...availableMembers].sort(() => Math.random() - 0.5);
+        const visualMembers = [...availableMembers];
+        visualMembers.sort(() => Math.random() - 0.5);
         for (let i = 0; i < 20; i++) {
             setTimeout(async () => {
                 const rolledMember = visualMembers[i % visualMembers.length];
